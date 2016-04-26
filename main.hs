@@ -1,9 +1,12 @@
-plus :: Int -> Int -> Int
-plus = (+)
+import Expand
+import Syntax
+import Pretty
+import Data.String.Utils
 
-plusPlus :: Int -> Int -> Int -> Int
-plusPlus a b c = a + b + c
 
-main = do
-  let res = plus 1 2
-  putStrLn $ "1+2 = " ++ show res
+main = putStrLn (prettyAST (expand ((
+  (Quantified Forall 
+    (Fcall "allInstance" [(Literal (StringValue "Rel$RelSchema"))]) 
+    ("s", (RefType "Rel$RelSchema"))
+     Undef 
+  )))))

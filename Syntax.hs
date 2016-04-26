@@ -1,4 +1,15 @@
-module Language.Ocl.AST where
+module Syntax where
+
+
+
+-- * Ocl decompose specific 
+
+-- | Rules
+type Rule = String
+
+
+
+-- * Ocl specific
 
 -- | Identifier
 type Id = String
@@ -11,17 +22,18 @@ type Ref = Int
 
 {- Types -}
 
--- | Types parametrized by the representation of free type variables
-data GenType fv = 
+-- | Types 
+data Type = 
   BoolType |                                -- ^ bool 
   IntType |                                 -- ^ int
-  MapType [fv] [GenType fv] (GenType fv) |  -- 'MapType' @type_vars domains range@ : arrow type (used for maps, function and procedure signatures)
-  IdType Id [GenType fv]                    -- 'IdType' @name args@: type denoted by an identifier (either type constructor, possibly with arguments, or a type variable)
+  StringType |                              -- ^ string
+  RefType Id                                -- ^ ref to a type Id
+
+
 
   
--- | Regular types with free variables represented as identifiers 
-type Type = GenType Id
 
+  
 
 {- Expressions -}  
 -- | Unary operators
@@ -34,21 +46,32 @@ data BinOp = Plus | Minus | Times | Div | Mod | And | Or | Implies | Explies | E
 data ItOp = Forall | Exists 
 
 -- | Values   
-data Value = IntValue Integer |  -- ^ Integer value
+data Value = 
+  IntValue Integer |             -- ^ Integer value
   BoolValue Bool |               -- ^ Boolean value
-  StringValue String |           -- ^ String value
-  CustomValue Type Ref |         -- ^ Value of a user-defined type
-  Reference Type Ref             -- ^ Map reference
+  StringValue String             -- ^ String value
+
 
   
 -- | Expression
 data Expression = 
+  Undef |
+  Debug String |
   Literal Value |
-  Fcall Id [Expression] |                         -- ^ Fcall(FId, args)
-  IfExpr Expression Expression Expression |       -- ^ If(cond, thn, els)
+  Variable IdType |
+  Fcall Id [Expression] |                         -- ^ Fcall: FId(args)
+  Navigation Id Expression Type|                  -- ^ Navigation: Expression.id
+  IfExpr Expression Expression Expression |       -- ^ If: If cond thn els
   UnaryExpression UnOp Expression |
   BinaryExpression BinOp Expression Expression |
-  Quantified ItOp Expression IdType Expression    -- ^ Qop(col, bv, body)
+  Quantified ItOp Expression IdType Expression |   -- ^ Qop(col, bv, body)
+  As Expression Rule |
+  UnionSelect Expression [String] |
+  Ite Expression [String]
 
 
-main = undefined
+ 
+
+
+
+
