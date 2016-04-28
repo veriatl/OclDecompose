@@ -24,13 +24,9 @@ expand (Navigation op src BoolType) =  Navigation op src BoolType
 expand (Navigation op src StringType) =  Navigation op src StringType
 
 
-expand (Navigation op src (RefType tp)) = case startswith "<C>" tp of
-  True -> case (lookup (replace "<C>" "" tp) trace) of
+expand (Navigation op src (RefType tp)) = case (lookup tp trace) of
     Nothing -> Navigation op (expand src) (RefType tp)
-    Just poss -> UnionSelect (Navigation op (expand src) (RefType tp)) poss
-  False -> case (lookup tp trace) of
-    Nothing -> Navigation op (expand src) (RefType tp)
-    Just poss -> Ite (Navigation op (expand src) (RefType tp)) poss  
+    Just poss -> Poss (Navigation op (expand src) (RefType tp)) poss
 
 
   
@@ -40,8 +36,8 @@ expand (Fcall fname args) = case fname of
     (x:_) -> case x of
       Literal (StringValue s) -> case lookup s trace of 
         Nothing -> Fcall fname args
-        Just poss -> UnionSelect (Fcall fname args) poss
-      otherwise -> Fcall fname args 
+        Just poss -> Poss (Fcall fname args) poss
+      otherwise -> Fcall fname [(expand x)] 
   otherwise ->  Fcall fname (map expand args)
 
 

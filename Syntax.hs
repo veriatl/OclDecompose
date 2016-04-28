@@ -66,8 +66,7 @@ data Expression =
   BinaryExpression BinOp Expression Expression |
   Quantified ItOp Expression IdType Expression |   -- ^ Qop(col, bv, body)
   As Expression Rule |
-  UnionSelect Expression [String] |
-  Ite Expression [String]
+  Poss Expression [String] 
 
 
  
