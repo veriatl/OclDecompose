@@ -1,0 +1,28 @@
+Process started >>>
+[HSM2FSM_EXP/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.989171028137207
+[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:3.3081891536712646
+[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[original.bpl]:[3]:unverified:3.574204683303833
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case01.bpl]:[3]:verified:1.915109634399414
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case02.bpl]:[3]:verified:1.9401109218597412
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case03.bpl]:[3]:verified:2.2071261405944824
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case04.bpl]:[3]:verified:2.1281216144561768
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case05.bpl]:[3]:verified:2.155123233795166
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case06.bpl]:[3]:verified:1.9741129875183105
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case07.bpl]:[3]:verified:1.9021086692810059
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case08.bpl]:[3]:unverified:2.290131092071533
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case09.bpl]:[3]:verified:1.8351049423217773
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case10.bpl]:[3]:verified:1.8441057205200195
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case11.bpl]:[3]:verified:2.041116714477539
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case12.bpl]:[3]:verified:2.4571404457092285
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case13.bpl]:[3]:verified:1.8481056690216064
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case14.bpl]:[3]:verified:1.8771073818206787
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case15.bpl]:[3]:verified:1.9721128940582275
+	[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_lower/]:[case16.bpl]:[3]:verified:2.395136833190918
+	32.781874895095825
+[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:verified:3.458197832107544
+[HSM2FSM_EXP/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:3.3121895790100098
+[HSM2FSM_EXP/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.6652095317840576
+[HSM2FSM_EXP/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.9511687755584717
+56.04020547866821
+<<< Process finished. (Exit code 0)
+================ READY ================

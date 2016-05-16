@@ -1,0 +1,121 @@
+Process started >>>
+[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:unverified:2.4471399784088135
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case01.bpl]:[3]:verified:1.5180869102478027
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case02.bpl]:[3]:verified:1.5330877304077148
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case03.bpl]:[3]:verified:1.5310876369476318
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case04.bpl]:[3]:verified:1.5730900764465332
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case05.bpl]:[3]:unverified:1.5640895366668701
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case06.bpl]:[3]:unverified:1.5810902118682861
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case07.bpl]:[3]:unverified:1.6010916233062744
+	[M1/]:[/Sub-goals/fsm_state_multi_lower/]:[case08.bpl]:[3]:verified:1.5990915298461914
+	12.500715255737305
+[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:unverified:3.3971943855285645
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case01.bpl]:[3]:verified:1.5210869312286377
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case02.bpl]:[3]:verified:1.544088363647461
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case03.bpl]:[3]:verified:1.5360877513885498
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case04.bpl]:[3]:verified:1.7040975093841553
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case05.bpl]:[3]:unverified:1.7270987033843994
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case06.bpl]:[3]:unverified:1.8071033954620361
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case07.bpl]:[3]:unverified:1.7450997829437256
+	[M1/]:[/Sub-goals/fsm_transition_multi_lower/]:[case08.bpl]:[3]:verified:1.899108648300171
+	13.483771085739136
+[M1/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:verified:2.746157169342041
+[M1/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:2.399137020111084
+[M1/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:2.7991602420806885
+[M1/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.518143892288208
+42.29141902923584
+[M2/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.607149362564087
+[M2/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:2.993171215057373
+[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:unverified:3.250185966491699
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case01.bpl]:[3]:verified:1.5780901908874512
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case02.bpl]:[3]:verified:2.022115468978882
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case03.bpl]:[3]:verified:2.2031259536743164
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case04.bpl]:[3]:unverified:2.1111209392547607
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case05.bpl]:[3]:verified:1.6260929107666016
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case06.bpl]:[3]:verified:1.8851077556610107
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case07.bpl]:[3]:verified:1.9261102676391602
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case08.bpl]:[3]:unverified:2.276130199432373
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case09.bpl]:[3]:verified:1.5870907306671143
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case10.bpl]:[3]:verified:1.8781073093414307
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case11.bpl]:[3]:verified:2.0711183547973633
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case12.bpl]:[3]:verified:2.238128185272217
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case13.bpl]:[3]:verified:1.7681012153625488
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case14.bpl]:[3]:verified:1.8681068420410156
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case15.bpl]:[3]:verified:1.9981143474578857
+	[M2/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case16.bpl]:[3]:verified:2.1101205348968506
+	31.14678120613098
+[M2/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:2.8371620178222656
+[M2/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.135179281234741
+[M2/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.5891482830047607
+48.55877733230591
+[M3/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:3.0221729278564453
+[M3/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:3.4281959533691406
+[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:unverified:3.4911997318267822
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case01.bpl]:[3]:verified:2.009114980697632
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case02.bpl]:[3]:verified:1.5770902633666992
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case03.bpl]:[3]:verified:2.2281274795532227
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case04.bpl]:[3]:unverified:2.2151265144348145
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case05.bpl]:[3]:verified:2.156123161315918
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case06.bpl]:[3]:verified:1.6250929832458496
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case07.bpl]:[3]:verified:1.8191041946411133
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case08.bpl]:[3]:unverified:2.2291276454925537
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case09.bpl]:[3]:verified:1.8641066551208496
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case10.bpl]:[3]:verified:1.5810904502868652
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case11.bpl]:[3]:verified:2.022115468978882
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case12.bpl]:[3]:verified:2.3051319122314453
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case13.bpl]:[3]:verified:1.8561062812805176
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case14.bpl]:[3]:verified:1.786102294921875
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case15.bpl]:[3]:verified:1.9481112957000732
+	[M3/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case16.bpl]:[3]:verified:2.3381338119506836
+	31.559805393218994
+[M3/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:5.959340810775757
+[M3/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.566204071044922
+[M3/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:3.0231728553771973
+54.05009174346924
+[M4/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.7831592559814453
+[M4/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:3.0741758346557617
+[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:unverified:3.7762157917022705
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case01.bpl]:[3]:verified:1.9711127281188965
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case02.bpl]:[3]:verified:1.9681127071380615
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case03.bpl]:[3]:verified:1.55008864402771
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case04.bpl]:[3]:unverified:2.405137777328491
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case05.bpl]:[3]:verified:2.1851251125335693
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case06.bpl]:[3]:verified:1.9511115550994873
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case07.bpl]:[3]:verified:1.679095983505249
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case08.bpl]:[3]:unverified:2.3621349334716797
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case09.bpl]:[3]:verified:1.925110101699829
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case10.bpl]:[3]:verified:1.8671066761016846
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case11.bpl]:[3]:verified:1.6260931491851807
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case12.bpl]:[3]:unverified:2.364135265350342
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case13.bpl]:[3]:verified:1.902108907699585
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case14.bpl]:[3]:verified:1.8541059494018555
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case15.bpl]:[3]:verified:1.7360992431640625
+	[M4/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[case16.bpl]:[3]:verified:2.4531402587890625
+	31.799818992614746
+[M4/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:2.981170654296875
+[M4/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.210183620452881
+[M4/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.720155715942383
+50.34487986564636
+[M5/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.9621694087982178
+[M5/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:3.1771817207336426
+[M5/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:verified:3.1671810150146484
+[M5/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:3.204183340072632
+[M5/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.472198724746704
+[M5/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.7791590690612793
+18.762073278427124
+[M6/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.652151584625244
+[M6/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:2.742156982421875
+[M6/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:verified:2.6821534633636475
+[M6/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:4.938282489776611
+[M6/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:3.2731871604919434
+[M6/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.624150276184082
+18.912081956863403
+[M7/]:[/Sub-goals/fsm_state_multi_lower/]:[original.bpl]:[3]:verified:2.1931254863739014
+[M7/]:[/Sub-goals/fsm_transition_multi_lower/]:[original.bpl]:[3]:verified:2.5471456050872803
+[M7/]:[/Sub-goals/fsm_transition_trg_multi_lower/]:[original.bpl]:[3]:verified:2.527144432067871
+[M7/]:[/Sub-goals/unique_fsm_sm_names/]:[original.bpl]:[3]:verified:5.500314712524414
+[M7/]:[/Sub-goals/unique_fsm_state_names/]:[original.bpl]:[3]:verified:2.7781589031219482
+[M7/]:[/Sub-goals/fsm_transition_src_multi_upper/]:[original.bpl]:[3]:verified:2.1121208667755127
+17.658010005950928
+<<< Process finished. (Exit code 0)
+================ READY ================
