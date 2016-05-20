@@ -17,6 +17,7 @@ Repository structure
 - Prelude. The core Boogie libraries for the VeriATL verification system.
 - Result. the evaluation results of the orignal and mutated HSM2FSM case study in text format.
 - Three python scripts to reproduce the evaluation results.
+- Example. An example that demonstrates how to verify intermediate enumerated sub-goals to further reduce the size of generated sub-goals. 
 
 Tools required
 ------
