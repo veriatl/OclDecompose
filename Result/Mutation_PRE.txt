@@ -19,7 +19,7 @@ Process started >>>
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case01.bpl]:[3]:unverified:1.6300930976867676
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case02.bpl]:[3]:unverified:1.675095796585083
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case03.bpl]:[3]:unverified:1.7531003952026367
-
+	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case04.bpl]:[3]:verified:1.7020974159240723
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case05.bpl]:[3]:unverified:1.6900966167449951
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case06.bpl]:[3]:unverified:1.6460943222045898
 	[P02/]:[/Sub-goals/unique_fsm_state_names/]:[case07.bpl]:[3]:unverified:1.7440998554229736

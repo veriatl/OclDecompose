@@ -112,7 +112,7 @@ def BatchTest(isDetailed):
 						p.wait()
 						done = time.time()
 						out, err = p.communicate()
-
+						print(out)
 						elapsed = done - start
 						sum+=elapsed
 						
