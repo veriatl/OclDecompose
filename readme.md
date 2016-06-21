@@ -18,6 +18,7 @@ Repository structure
 - Result. the evaluation results of the orignal and mutated HSM2FSM case study in text format.
 - Three python scripts to reproduce the evaluation results.
 - Example. An example that demonstrates how to verify intermediate enumerated sub-goals to further reduce the size of generated sub-goals. 
+- Impl. Haskell implementation of our approach.
 
 Tools required
 ------
@@ -25,3 +26,4 @@ The following tools are needed to reproduce the result of the HSM2FSM case study
 - Python 3.0+
 - Boogie 2.2+
 - Z3 4.3+
+- Haskell

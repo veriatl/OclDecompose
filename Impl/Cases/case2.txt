@@ -1,0 +1,6 @@
+(Quantified 
+    Forall 																		--^ ItOp
+    (Fcall "allInstance" [(Literal (StringValue "Rel$RelSchema"))]) 			--^ col
+    ("s", (RefType "Rel$RelSchema"))											--^ bv
+    Undef 																		--^ body
+)
