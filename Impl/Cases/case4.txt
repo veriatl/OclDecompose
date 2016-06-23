@@ -1,0 +1,12 @@
+
+=== OCL
+
+Rel$RelSchema.allInstance->forall( s |
+	s.relations->size() < 100
+)
+
+=== AST
+
+
+=== Expected
+ reject

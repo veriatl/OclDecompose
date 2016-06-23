@@ -1,3 +1,16 @@
+
+=== OCL
+
+Rel$RelSchema.allInstance->forall( s |
+	s.relations->forall(r1 |
+		s.relations->forall( r2 |
+			r1 <> r2 implies r1.name <> r2.name
+		)
+	)
+)
+
+=== AST
+
 (Quantified 
   Forall 
   (Fcall "allInstance" [(Literal (StringValue "Rel$RelSchema"))]) 
@@ -19,3 +32,6 @@
     )
   ) 
 )
+
+=== Expected
+ proceed
