@@ -18,16 +18,16 @@ printTree :: ProveTree -> Int -> String
 printTree (Tree op exprs subTree) lv = case (length (printTree subTree (lv+1))) - (length ("\n" ++ (printLv (lv+1)) ++ (printOp op) ++ "\n"++ (printLv (lv+1)))) of
   0 -> ("\n" ++ (printLv lv) ++ (printOp op) ++ "\n" ++ (printLv lv)) ++
        join ("\n"++ (printLv lv)) 
-            (map prettyAST exprs)
+            (map (prettyAST True) exprs)
   _ -> ("\n" ++ (printLv lv) ++ (printOp op) ++ "\n" ++ (printLv lv)) ++
        join ("\n"++ (printLv lv))
             (map (++ (" where _PlaceHolder = " ++ (printTree subTree (lv+1)))) 
-                 (map prettyAST exprs))
+                 (map (prettyAST False) exprs))
 
 
 
 printTree (Node op expr poss) lv = case length poss of
-  0 -> prettyAST expr
+  0 -> prettyAST False expr
   _ -> "Err"
   
 printTree Err lv = "Err"
@@ -66,37 +66,39 @@ prettyOperator Geq = ">="
 
 
 
-prettyAST :: Expression -> String
+prettyAST :: Bool -> Expression -> String
 
-prettyAST Undef = "Undef "
+prettyAST _ Undef = "Undef "
 
-prettyAST (Literal (IntValue i)) = format "({0})" [show i]
-prettyAST (Literal (BoolValue b)) =  format "({0})" [show b]
-prettyAST (Literal (StringValue s)) =  format "({0})" [show s]
+prettyAST _ (Literal (IntValue i)) = format "({0})" [show i]
+prettyAST  _ (Literal (BoolValue b)) =  format "({0})" [show b]
+prettyAST  _ (Literal (StringValue s)) =  format "({0})" [show s]
 
-prettyAST (Variable (id, tp)) = format "({0})" [(show id)] -- ^ Decide not to print the type for clarity
+prettyAST  _ (Variable (id, tp)) = format "({0})" [(show id)] -- ^ Decide not to print the type for clarity
 
-prettyAST (IfExpr cond thn els) = format "(if({0}) ({1}) else ({2}))" [(prettyAST cond), (prettyAST thn), (prettyAST els)]
+prettyAST  _ (IfExpr cond thn els) = format "(if({0}) ({1}) else ({2}))" [(prettyAST False cond), (prettyAST False thn), (prettyAST False els)]
 
-prettyAST (UnaryExpression uop expr) = format "(not {0})" [(prettyAST expr)]
+prettyAST  _ (UnaryExpression uop expr) = format "(not {0})" [(prettyAST False expr)]
 
-prettyAST (BinaryExpression bop lhs rhs) = format "({1} {0} {2})" [(prettyOperator bop), (prettyAST lhs), (prettyAST rhs)]
+prettyAST  _ (BinaryExpression bop lhs rhs) = format "({1} {0} {2})" [(prettyOperator bop), (prettyAST False lhs), (prettyAST False rhs)]
 
-prettyAST (Quantified Forall col (id, tp) body) = format "(({0})->forAll\n({1}:{2} | {3}))" [(prettyAST col), (show id), (prettyType tp), (prettyAST body)]
+prettyAST True (Quantified Forall col (id, tp) body)  = format "(({0})->forAll({1}:{2} | {3}))" [(prettyAST False col), (show id), (prettyType tp), (prettyAST False body)]
+prettyAST False (Quantified Forall col (id, tp) body)  = format "(({0})->forAll({1}:{2} | _PlaceHolder))" [(prettyAST False col), (show id), (prettyType tp)]
 
-prettyAST (Quantified Exists col (id, tp) body) = format "(({0})->exists\n({1}:{2} | {3}))" [(prettyAST col), (show id), (prettyType tp), (prettyAST body)]
+prettyAST True (Quantified Exists col (id, tp) body)  = format "(({0})->exists({1}:{2} | {3}))" [(prettyAST False col), (show id), (prettyType tp), (prettyAST False body)]
+prettyAST False (Quantified Exists col (id, tp) body)  = format "(({0})->exists({1}:{2} | _PlaceHolder))" [(prettyAST False col), (show id), (prettyType tp)]
 
-prettyAST (Navigation id src tp) = format "({0}.{1}: {2})" [(prettyAST src), (id), (prettyType tp)]
+prettyAST  _ (Navigation id src tp) = format "({0}.{1})" [(prettyAST False src), (id)]
 
-prettyAST (Poss expr poss) = format "({0})" [(prettyAST expr)]
+prettyAST  _ (Poss expr poss) = format "({0})" [(prettyAST False expr)]
 
-prettyAST (Debug str) = format "*-- {0}*" [str]
+prettyAST  _ (Debug str) = format "*-- {0}*" [str]
 
-prettyAST (Fcall "allInstance" exprs) =  case length exprs of
-  1 -> format "{0}.allInstance()" [(join " | " (map prettyAST exprs))]
+prettyAST  _ (Fcall "allInstance" exprs) =  case length exprs of
+  1 -> format "{0}.allInstance()" [(join " | " (map (prettyAST False) exprs))]
   otherwise -> "illFormed.allInstance()"
   
-prettyAST (GenBy expr rule) = format "({0} GenBy {1})" [(prettyAST expr), rule]
+prettyAST  _ (GenBy expr rule) = format "({0} GenBy {1})" [(prettyAST  False expr), rule]
   
 
-prettyAST _ = "Default"
+prettyAST _  _= "Default"
