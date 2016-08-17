@@ -7,7 +7,7 @@ In model-driven engineering, correct model transformation is essential for relia
 
 Example,
 ------
-A walk through of our fault-localzation approach by decomposition: the ER2REL Transformation [url](https://github.com/veriatl/VeriATL.CaseStudies).
+A walk through of our fault-localzation approach by decomposition: the ER2REL Transformation [url](https://github.com/veriatl/OclDecompose/tree/master/ER2REL)
 
 Repository structure
 ------
