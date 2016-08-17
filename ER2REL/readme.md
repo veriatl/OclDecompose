@@ -14,7 +14,7 @@ Full Contract
 ------
 [url](https://github.com/veriatl/OclDecompose/tree/master/ER2REL/Src/contract.atl)
 
-Postcondition
+Postcondition decomposition
 ------
 0/ The original postcondition:
 ```
