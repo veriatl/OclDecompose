@@ -10,3 +10,7 @@ Rel$RelSchema.allInstance->forall( s |
 
 === Expected
  reject
+
+ 
+=== Explain
+ Binary operator < is not distributive, e.g. A + B < 100 cannot be proved by A < 100 AND/OR B < 100

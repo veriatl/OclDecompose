@@ -35,7 +35,7 @@ data Type =
 data UnOp = Not
 
 -- | Binary operators  
-data BinOp = Plus | Minus | Times | Div | Mod | And | Or | Implies | Explies | Equiv | Eq | Neq | Lt | Leq | Gt | Geq
+data BinOp = Plus | Minus | Times | Div | Mod | And | Or | Implies | Equiv | Eq | Neq | Lt | Leq | Gt | Geq
 
 -- | Iterators
 data ItOp = Forall | Exists 

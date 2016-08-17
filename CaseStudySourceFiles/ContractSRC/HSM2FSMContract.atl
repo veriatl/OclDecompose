@@ -28,7 +28,8 @@ helper context HSM!AbstractState def: hsm_state_multi_upper(): Boolean = -- a st
 helper context HSM!AbstractState def: hsm_transition_composite_upper(): Boolean = -- at most one compositeState
   HSM!AbstractState.allInstances()->forAll(c1,c2 | 
     c1.oclIsTypeOf(HSM!CompositeState) and c2.oclIsTypeOf(HSM!CompositeState) implies c1=c2);
-    
+--  HSM!CompositeState.allInstances()->size() = 1
+
 --@pre 
 helper context HSM!Transition def: hsm_transition_multi_lower(): Boolean = -- a transition does belong to at least one state machine
   HSM!Transition.allInstances()->forAll(t | not t.stateMachine.oclIsUndefined());
@@ -115,6 +116,17 @@ helper context FSM!Transition def: fsm_transition_src_multi_upper(): Boolean = -
 helper context FSM!Transition def: fsm_transition_trg_multi_lower(): Boolean = -- a transition has at least one target
   FSM!Transition.allInstances()->forAll(t | not t.target.oclIsUndefined());
 
+-- Standard OCL:
+--  context FSM::Transition inv someName:
+--		not self.target.oclIsUndefined()
+-- A possible ATL translation:
+--helper context FSM!Transition def: invariant : Boolean =
+--	not self.target.oclIsUndefined();
 
-
+--  FSM!CompositeState.allInstances()->size() = 0
+-- In OCL:
+--  context FSM::CompositeState inv:
+--		false
+-- In ATL, using the same translation as for Transitions:
+--   FSM!CompositeState.allInstances()->forAll(t | false);
 

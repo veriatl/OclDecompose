@@ -5,6 +5,10 @@ Introduction
 ------
 In model-driven engineering, correct model transformation is essential for reliably producing the artefacts that drive software development. While correctness of model transformation can be specified and checked via contracts, existing approaches do not help in finding the precise location of faults that cause the verification to fail. We present an automatic fault-localization approach, based on deductive verification, for the ATL relational model-transformation language. We start by designing and implementing an algorithm for the automatic decomposition of OCL contracts (postcondition in particular) into sub-goals, based on static trace information from the input ATL model transformation: successfully proving all the sub-goals implies the correctness of the decomposed OCL postcondition. Then, we use these sub-goals to slice the ATL model transformation and present the user with simple scenarios that pinpoint the fault. This repository contains the evaluation artefects of our automatic fault localization approach for the ATL language using the VeriATL decutive verification system [url](https://github.com/veriatl/VeriATL.CaseStudies).
 
+Example,
+------
+A walk through of our fault-localzation approach by decomposition: the ER2REL Transformation [url](https://github.com/veriatl/VeriATL.CaseStudies).
+
 Repository structure
 ------
 - CaseStudySourceFiles. The source code of the HSM2FSM case study, including the source and target metamodels, the HSM2FSM transformation in ATL, and the OCL contracts of HSM2FSM in OCL.
@@ -27,3 +31,4 @@ The following tools are needed to reproduce the result of the HSM2FSM case study
 - Boogie 2.2+
 - Z3 4.3+
 - Haskell
+
