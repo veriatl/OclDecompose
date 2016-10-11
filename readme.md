@@ -15,7 +15,7 @@ Preparation:
 Run VeriATL (ie.nuim.cs.veriatl.compiler) to generate Boogie code to verify the original postcondition:
 * Configure VeriATL (i.e. "veriATL.conf" under "ie.nuim.cs.veriatl.compiler") to specify which project to be verified.
 * Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner" package) first to generate a skeleton for the to-be-verified project. 
-* Copy the artefects into the generated skeleton (e.g. ATL transformation goes to the ATLSRC folder), see [HERE](https://github.com/veriatl/OclDecompose/tree/master/HSM2FSM/Source) for example of structuring the project skeleton.
+* Copy the artefects into the generated skeleton (e.g. ATL transformation goes to the ATLSRC folder), see [(Click)](https://github.com/veriatl/OclDecompose/tree/master/HSM2FSM/Source) for example of structuring the project skeleton.
 * Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner") again, will generate Boogie code to verify the original postcondition.
 
 Run OCLDecomposer (fr.emn.atlanmod.ocldecomposer) to generate sub-goals and Boogie code of sub-goals to localize the fault:
