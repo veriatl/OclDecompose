@@ -26,7 +26,7 @@ At this point, all the Boogie code to verify each postcondition and localize its
 
 Evaluation
 ------
-First, let us understand the artefects that relevant to reproduce the evaluation result:
+These are the artefects that relevant to reproduce the evaluation result:
 * HSM2FSM / AF2 / AR / DB1 / DR1 / MB6 / MF6 / MT2. Each of these folders contains all the Boogie code to verify each postcondition and localize its fault for a given project (Generated from the previous steps). Within each folder, we have three kinds of artefacts:
   * Auxu. The corresponding Boogie code of the case study.
   * Sub-goals. The Boogie code of the sub-goals / original postcondition.
