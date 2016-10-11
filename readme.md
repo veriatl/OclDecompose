@@ -9,17 +9,17 @@ In model-driven engineering, correct model transformation is essential for relia
 How to run
 ------
 Preparation:
-1. Download VeriATL [Clone url](https://github.com/veriatl/Compiler.VeriATL.git)
-2. Download OCLDecomposer [Clone url](https://github.com/veriatl/genTool.git)
+* Download VeriATL [Clone url](https://github.com/veriatl/Compiler.VeriATL.git)
+* Download OCLDecomposer [Clone url](https://github.com/veriatl/genTool.git)
 
 Run VeriATL (ie.nuim.cs.veriatl.compiler) to generate Boogie code to verify the original postcondition:
-3. Configure VeriATL (i.e. "veriATL.conf" under "ie.nuim.cs.veriatl.compiler") to specify which project to be verified.
-4. Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner" package) first to generate a skeleton for the to-be-verified project. 
-5. Copy the artefects into the generated skeleton (e.g. ATL transformation goes to the ATLSRC folder), see [HERE]() for example of structuring the project skeleton.
-6. Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner") again, will generate Boogie code to verify the original postcondition.
+* Configure VeriATL (i.e. "veriATL.conf" under "ie.nuim.cs.veriatl.compiler") to specify which project to be verified.
+* Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner" package) first to generate a skeleton for the to-be-verified project. 
+* Copy the artefects into the generated skeleton (e.g. ATL transformation goes to the ATLSRC folder), see [HERE]() for example of structuring the project skeleton.
+* Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner") again, will generate Boogie code to verify the original postcondition.
 
 Run OCLDecomposer (fr.emn.atlanmod.ocldecomposer) to generate sub-goals and Boogie code of sub-goals to localize the fault:
-7. Run OCLDecomposer ("ocldecomposerDriver" under "driver" package), the sample args to run it is given at "sampleConf.txt"
+* Run OCLDecomposer ("ocldecomposerDriver" under "driver" package), the sample args to run it is given at "sampleConf.txt"
 
 At this point, all the Boogie code to verify each postcondition and localize its fault for the given project are generated.
 
