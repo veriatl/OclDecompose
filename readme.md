@@ -3,8 +3,14 @@ Fault localization for ATL model transformations using natural deduction and pro
 
 Introduction
 ------
-In model-driven engineering, correct model transformation is essential for reliably producing the artefacts that drive software development. While correctness of model transformation can be specified and checked via contracts, existing approaches do not help to find the precise location of faults that cause the verification failure. We present a fault localization approach, based on natural deduction, for the ATL model transformation language. We start by designing sound natural deduction rules for the ATL language. Then, we propose an automated proof strategy that applies the designed deduction rules on the input OCL postcondition to generate sub-goals: successfully proving the sub-goals implies the satisfaction of the input OCL postcondition. When a sub-goal is not verified, we present the user with sliced ATL model transformation and predicates deduced from the input postcondition as debugging clues. The goal is to alleviate the cognitive loading of debugging unverified sub-goals.  We present here the artefects used in the evaluation for our fault localization approach.
+In model-driven engineering, correct model transformation is essential for reliably producing the artefacts that drive software development. While correctness of model transformation can be specified and checked via contracts, existing approaches do not help to find the precise location of faults that cause the verification failure. We present a fault localization approach, based on natural deduction, for the ATL model transformation language. We start by designing sound natural deduction rules for the ATL language. Then, we propose an automated proof strategy that applies the designed deduction rules on the input OCL postcondition to generate sub-goals: successfully proving the sub-goals implies the satisfaction of the input OCL postcondition. When a sub-goal is not verified, we present the user with sliced ATL model transformation and predicates deduced from the input postcondition as debugging clues. The goal is to alleviate the cognitive loading of debugging unverified sub-goals. We present here the artefects used in the evaluation for our fault localization approach.
 
+Impacts
+------
+Our evaluation observes three items that would impact fault localization for ATL transformations:
+* The guilty construct(s) is presented in the slice. 
+* Deduced clues assist developers in various debugging tasks (e.g. generate counter-example). 
+* The number of sub-goals that need to be examined to pinpoint a fault are usually small.
 
 How to run
 ------
