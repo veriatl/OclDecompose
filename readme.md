@@ -25,7 +25,7 @@ Run VeriATL (ie.nuim.cs.veriatl.compiler) to generate Boogie code to verify the 
 * Run VeriATL ("xpandExec" under "cs.nuim.ie.workflowRunner") again, will generate Boogie code to verify the original postcondition.
 
 Run OCLDecomposer (fr.emn.atlanmod.ocldecomposer) to generate sub-goals and Boogie code of sub-goals to localize the fault:
-* Run OCLDecomposer ("ocldecomposerDriver" under "driver" package), the sample args to run it is given at "sampleConf.txt"
+* Run OCLDecomposer ("ocldecomposerDriver" under "localize" package), the sample args to run it is given at "sampleConf.txt"
 
 At this point, all the Boogie code to verify each postcondition and localize its fault for the given project are generated.
 
