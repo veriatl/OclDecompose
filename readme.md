@@ -1,4 +1,4 @@
-Fault localization for ATL model transformations using natural deduction and program slicing (Online)
+A deductive approach for fault localization in ATL model transformations (Online)
 =======
 
 Introduction
