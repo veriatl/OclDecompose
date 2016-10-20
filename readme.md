@@ -12,6 +12,11 @@ Our evaluation observes three items that would impact fault localization for ATL
 * Deduced clues assist developers in various debugging tasks (e.g. generate counter-example). 
 * The number of sub-goals that need to be examined to pinpoint a fault are usually small.
 
+Video
+------
+Interest in VeriATL, but do not have time to install? Worry not! Quick demo of VeriATL on youtube:
+[Click to watch](https://youtu.be/rUPLvDHEXiY)
+
 How to run
 ------
 Preparation:
