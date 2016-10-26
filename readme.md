@@ -52,3 +52,7 @@ Contacts
 
 > Massimo Tisi: massimo.tisi@inria.fr
 
+Collaborators
+------
+* Rosemary Monahan, Maynooth Univerisity, IE
+* James F. Power, Maynooth Univerisity, IE
